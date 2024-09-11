@@ -7,7 +7,7 @@ class TestLogin:
 
     def test_successful_login(self, driver):
         driver.get("http://localhost:3000/admin")
-        
+        # cibler les champs de formulaire
         email_input = driver.find_element(By.NAME, "email")
         password_input = driver.find_element(By.NAME, "password")
         login_button = driver.find_element(By.XPATH, "//button[@type='submit']")
